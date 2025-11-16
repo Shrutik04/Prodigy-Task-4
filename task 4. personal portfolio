@@ -1,0 +1,211 @@
+//html code 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shrutik Katkar - Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+  <header>
+    <div class="hero">
+      
+
+      <img src="shrutik.JPG"  class="profile-photo" alt="Shrutik Katkar">
+      <h1>Creative Web Developer Turning Ideas into Reality</h1>
+      <p>HTML, CSS, JavaScript | React | Responsive Design | Problem Solver</p>
+      <a href="#contact" class="cta-btn">Contact Me</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate web developer with a strong background in computer science and several years of experience building modern web applications. I specialize in front-end technologies and have developed multiple projects using HTML, CSS, JavaScript, and React. Graduate of XYZ University, B.Tech Computer Science, 2022.
+      </p>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3 & Sass</li>
+        <li>JavaScript & React</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+   
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/Shrutik04" target="_blank">GitHub</a>
+        <a href="www.linkedin.com/in/shrutik-katkar-0429b02aa" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Shrutik</p>
+  </footer>
+</body>
+</html>
+
+
+// css code 
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+header {
+  background: #005f73;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+h1, h2 {
+  margin: 0 0 12px 0;
+}
+.cta-btn {
+  background: #94d2bd;
+  color: #005f73;
+  padding: 10px 22px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 18px;
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #e9d8a6;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  background: #0a9396;
+}
+nav li {
+  margin: 0 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+section {
+  margin-bottom: 38px;
+}
+.skills {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 14px 0 0 0;
+  list-style: none;
+}
+.skills li {
+  background: #94d2bd;
+  color: #005f73;
+  padding: 6px 18px;
+  border-radius: 26px;
+  font-size: 0.9rem;
+}
+.project-list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.project {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  padding: 14px;
+  border-radius: 12px;
+  width: 270px;
+}
+.project img {
+  border-radius: 8px;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 9px;
+}
+.social-links { margin-top: 18px; }
+.social-links a {
+  margin-right: 18px;
+  text-decoration: none;
+  color: #005f73;
+  font-weight: bold;
+}
+form input, form textarea, form button {
+  width: 100%;
+  padding: 8px;
+  margin: 7px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+form button {
+  background: #94d2bd;
+  color: #005f73;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background: #e9d8a6;
+}
+footer {
+  text-align: center;
+  background: #0a9396;
+  color: #fff;
+  padding: 16px 0;
+  margin-top: 38px;
+  border-top: 2px solid #94d2bd;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .project-list {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  main {
+    padding: 0 8px;
+  }
+}
